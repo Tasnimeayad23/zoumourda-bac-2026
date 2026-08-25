@@ -1,0 +1,410 @@
+/* =========================
+   RESET
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    color: #3d2948;
+    background: #faf7fc;
+}
+
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    background:
+        radial-gradient(circle at top,
+        #eee2f5 0%,
+        #d8c0e4 35%,
+        #8d639e 100%);
+
+    position: relative;
+    overflow: hidden;
+}
+
+.hero::before {
+    content: "✦";
+
+    position: absolute;
+    top: 10%;
+    left: 12%;
+
+    font-size: 30px;
+    opacity: 0.5;
+}
+
+.hero::after {
+    content: "✦";
+
+    position: absolute;
+    bottom: 15%;
+    right: 12%;
+
+    font-size: 24px;
+    opacity: 0.5;
+}
+
+.hero-content {
+    padding: 30px;
+    animation: fadeIn 1.5s ease;
+}
+
+.small-title,
+.section-small {
+    font-size: 11px;
+    letter-spacing: 4px;
+    font-weight: 500;
+}
+
+.hero h1 {
+    font-family: "DM Serif Display", serif;
+
+    font-size: clamp(60px, 12vw, 130px);
+
+    margin: 20px 0 5px;
+
+    color: #ffffff;
+
+    letter-spacing: 4px;
+}
+
+.bac {
+    font-size: 25px;
+    letter-spacing: 8px;
+    color: white;
+}
+
+.bac span {
+    font-weight: 600;
+}
+
+.line {
+    width: 70px;
+    height: 1px;
+
+    background: white;
+
+    margin: 30px auto;
+}
+
+.welcome {
+    color: white;
+    line-height: 1.8;
+    font-size: 14px;
+}
+
+.hero button {
+    margin-top: 40px;
+
+    padding: 15px 28px;
+
+    border: 1px solid rgba(255,255,255,0.7);
+    border-radius: 30px;
+
+    background: rgba(255,255,255,0.15);
+
+    color: white;
+
+    font-family: inherit;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.hero button:hover {
+    background: white;
+    color: #765184;
+}
+
+.hero button span {
+    margin-left: 10px;
+}
+
+
+/* =========================
+   SECTIONS
+========================= */
+
+section {
+    padding: 110px 25px;
+    text-align: center;
+}
+
+h2 {
+    font-family: "DM Serif Display", serif;
+
+    font-size: 48px;
+
+    margin-top: 15px;
+
+    color: #684477;
+}
+
+.decoration {
+    font-size: 25px;
+    margin: 30px;
+    color: #9b72ad;
+}
+
+
+/* =========================
+   INVITATION
+========================= */
+
+.invitation {
+    max-width: 900px;
+    margin: auto;
+}
+
+.invitation-text {
+    max-width: 650px;
+    margin: 20px auto;
+
+    line-height: 2;
+
+    font-size: 15px;
+    color: #66586d;
+}
+
+
+/* =========================
+   DETAILS
+========================= */
+
+.details {
+    background: #f0e7f5;
+}
+
+.details-container {
+    max-width: 900px;
+
+    margin: 60px auto 0;
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 20px;
+}
+
+.detail-card {
+    background: rgba(255,255,255,0.7);
+
+    padding: 35px 20px;
+
+    border-radius: 20px;
+
+    box-shadow: 0 10px 30px rgba(80,40,100,0.08);
+}
+
+.icon {
+    font-size: 30px;
+    color: #8d639e;
+    margin-bottom: 15px;
+}
+
+.detail-card h3 {
+    font-size: 12px;
+    letter-spacing: 3px;
+
+    margin-bottom: 10px;
+}
+
+.detail-card p {
+    color: #765184;
+}
+
+
+/* =========================
+   DRESS CODE
+========================= */
+
+.colors {
+    display: flex;
+    justify-content: center;
+
+    gap: 50px;
+
+    margin-top: 50px;
+}
+
+.color p {
+    margin-top: 10px;
+
+    font-size: 12px;
+    letter-spacing: 2px;
+}
+
+.circle {
+    width: 65px;
+    height: 65px;
+
+    border-radius: 50%;
+
+    margin: auto;
+
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+
+.white {
+    background: #ffffff;
+    border: 1px solid #ddd;
+}
+
+.lavender {
+    background: #d8c4df;
+}
+
+.purple {
+    background: #79518a;
+}
+
+
+/* =========================
+   PROGRAMME
+========================= */
+
+.program {
+    background: #f5eff8;
+}
+
+.timeline {
+    max-width: 600px;
+
+    margin: 60px auto 0;
+
+    text-align: left;
+}
+
+.event {
+    display: flex;
+
+    gap: 30px;
+
+    padding: 25px 0;
+
+    border-bottom: 1px solid #ddcfe3;
+}
+
+.event span {
+    min-width: 60px;
+
+    color: #80578e;
+
+    font-weight: 600;
+}
+
+.event p {
+    color: #66586d;
+}
+
+
+/* =========================
+   FINAL
+========================= */
+
+.final {
+    min-height: 80vh;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    background:
+        linear-gradient(
+            135deg,
+            #765184,
+            #b18bc0
+        );
+
+    color: white;
+}
+
+.final h2 {
+    color: white;
+
+    font-size: 65px;
+
+    margin: 20px 0 5px;
+}
+
+.bac-final {
+    letter-spacing: 8px;
+    font-size: 20px;
+}
+
+.star {
+    margin: 30px;
+    font-size: 25px;
+}
+
+.thanks {
+    line-height: 2;
+    font-size: 14px;
+}
+
+
+/* =========================
+   ANIMATION
+========================= */
+
+@keyframes fadeIn {
+
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 700px) {
+
+    .details-container {
+        grid-template-columns: 1fr;
+    }
+
+    .colors {
+        gap: 25px;
+    }
+
+    h2 {
+        font-size: 40px;
+    }
+
+    .final h2 {
+        font-size: 45px;
+    }
+
+}
