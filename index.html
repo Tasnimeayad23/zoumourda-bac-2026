@@ -1,218 +1,140 @@
 <!DOCTYPE html>
 <html lang="fr">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Zoumourda — BAC 2026</title>
-
-    <!-- Police -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
-
-    <!-- CSS -->
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#f3f1e8" />
+  <title>Jouzou's Party — Zoumourda BAC 2026</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
+  <div class="loading" id="loading">
+    <div class="loading-mark">Z</div>
+  </div>
 
-    <!-- ========================= -->
-    <!-- PAGE D'ACCUEIL -->
-    <!-- ========================= -->
+  <main>
+    <!-- COVER -->
+    <section class="hero section" id="home">
+      <div class="floral floral-left" aria-hidden="true"></div>
+      <div class="floral floral-right" aria-hidden="true"></div>
+      <div class="spark spark-1">✦</div>
+      <div class="spark spark-2">✦</div>
 
-    <section class="hero">
-
-        <div class="hero-content">
-
-            <p class="small-title">✨ UNE BELLE RÉUSSITE À CÉLÉBRER ✨</p>
-
-            <h1>ZOUMOURDA</h1>
-
-            <p class="bac">BAC <span>2026</span></p>
-
-            <div class="line"></div>
-
-            <p class="welcome">
-                Vous êtes chaleureusement invités<br>
-                à partager ce moment avec nous.
-            </p>
-
-            <button onclick="scrollToInvitation()">
-                Découvrir l'invitation
-                <span>↓</span>
-            </button>
-
-        </div>
-
+      <div class="hero-content reveal">
+        <p class="eyebrow">YOU'RE INVITED!</p>
+        <h1>Jouzou's<br><span>Party</span></h1>
+        <div class="small-line"></div>
+        <p class="intro">Une belle réussite à célébrer,<br>un moment précieux à partager.</p>
+        <a class="outline-btn" href="#details">Découvrir l'invitation <span>↓</span></a>
+      </div>
     </section>
 
+    <!-- DETAILS -->
+    <section class="details section" id="details">
+      <div class="floral floral-right floral-small" aria-hidden="true"></div>
 
-    <!-- ========================= -->
-    <!-- INVITATION -->
-    <!-- ========================= -->
-
-    <section class="invitation" id="invitation">
-
-        <p class="section-small">AVEC BEAUCOUP DE JOIE</p>
-
-        <h2>Nous vous invitons</h2>
-
-        <div class="decoration">✦</div>
-
-        <p class="invitation-text">
-            Après tant d'efforts et de persévérance,
-            nous sommes heureux de célébrer la réussite
-            de Zoumourda au BAC 2026.
+      <div class="details-content reveal">
+        <p class="eyebrow">A SPECIAL AFTERNOON</p>
+        <h2>Une invitation<br><em>pour une belle réussite</em></h2>
+        <p class="description">
+          Rejoignez-nous pour célébrer ensemble la réussite de
+          <strong>Zoumourda</strong> et partager une après-midi pleine
+          de joie, de rires et de beaux souvenirs.
         </p>
 
-        <p class="invitation-text">
-            Nous serions ravis de vous compter parmi nous
-            pour partager cette soirée exceptionnelle.
-        </p>
+        <div class="info-grid">
+          <article class="info-card">
+            <span class="icon">✦</span>
+            <p class="label">DATE</p>
+            <h3>12 Septembre 2026</h3>
+          </article>
 
+          <article class="info-card">
+            <span class="icon">◷</span>
+            <p class="label">HEURE</p>
+            <h3>15:00</h3>
+          </article>
+        </div>
+      </div>
     </section>
 
+    <!-- LOCATION -->
+    <section class="location section" id="location">
+      <div class="location-wrap reveal">
+        <div class="location-copy">
+          <p class="eyebrow">RENDEZ-VOUS</p>
+          <h2>Le lieu de<br><em>la célébration</em></h2>
+          <p class="description">
+            Nous vous attendons à la <strong>Salle des fêtes Lala Meriem</strong>,
+            à Annaba.
+          </p>
 
-    <!-- ========================= -->
-    <!-- INFORMATIONS -->
-    <!-- ========================= -->
-
-    <section class="details">
-
-        <p class="section-small">RENDEZ-VOUS</p>
-
-        <h2>La fête</h2>
-
-        <div class="details-container">
-
-            <div class="detail-card">
-                <div class="icon">♡</div>
-                <h3>DATE</h3>
-                <p>À venir</p>
+          <div class="address">
+            <span class="pin">⌖</span>
+            <div>
+              <strong>Salle des fêtes Lala Meriem</strong>
+              <span>VPRJ+CVC, Annaba, Algérie</span>
             </div>
+          </div>
 
-            <div class="detail-card">
-                <div class="icon">◷</div>
-                <h3>HEURE</h3>
-                <p>À venir</p>
-            </div>
+          <a
+            class="map-btn"
+            href="https://maps.app.goo.gl/zStUvwxBLfFwYBhM6"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <span>📍</span> Ouvrir la localisation
+          </a>
 
-            <div class="detail-card">
-                <div class="icon">⌖</div>
-                <h3>LIEU</h3>
-                <p>À venir</p>
-            </div>
-
+          <p class="map-note">Le bouton ouvre directement l'itinéraire dans Google Maps.</p>
         </div>
 
-    </section>
-
-
-    <!-- ========================= -->
-    <!-- DRESS CODE -->
-    <!-- ========================= -->
-
-    <section class="dress-code">
-
-        <p class="section-small">POUR UNE SOIRÉE HARMONIEUSE</p>
-
-        <h2>Dress Code</h2>
-
-        <div class="colors">
-
-            <div class="color">
-                <div class="circle white"></div>
-                <p>White</p>
+        <div class="map-card">
+          <div class="map-top">
+            <span>ANNABA</span>
+            <span>📍</span>
+          </div>
+          <div class="map-art">
+            <div class="road road-a"></div>
+            <div class="road road-b"></div>
+            <div class="road road-c"></div>
+            <div class="park"></div>
+            <div class="map-pin">
+              <span>♥</span>
             </div>
-
-            <div class="color">
-                <div class="circle lavender"></div>
-                <p>Lavender</p>
-            </div>
-
-            <div class="color">
-                <div class="circle purple"></div>
-                <p>Violet</p>
-            </div>
-
+            <div class="map-label">Lala Meriem</div>
+          </div>
+          <a
+            class="map-mini-link"
+            href="https://maps.app.goo.gl/zStUvwxBLfFwYBhM6"
+            target="_blank"
+            rel="noopener noreferrer"
+          >Voir sur Google Maps →</a>
         </div>
-
+      </div>
     </section>
 
+    <!-- FINAL -->
+    <section class="final section">
+      <div class="floral floral-left" aria-hidden="true"></div>
+      <div class="floral floral-right" aria-hidden="true"></div>
+      <div class="spark spark-3">✦</div>
 
-    <!-- ========================= -->
-    <!-- PROGRAMME -->
-    <!-- ========================= -->
-
-    <section class="program">
-
-        <p class="section-small">AU PROGRAMME</p>
-
-        <h2>Une soirée inoubliable</h2>
-
-        <div class="timeline">
-
-            <div class="event">
-                <span>19:00</span>
-                <p>Accueil des invités</p>
-            </div>
-
-            <div class="event">
-                <span>19:30</span>
-                <p>Début de la célébration</p>
-            </div>
-
-            <div class="event">
-                <span>20:30</span>
-                <p>Dîner</p>
-            </div>
-
-            <div class="event">
-                <span>21:30</span>
-                <p>Gâteau & photos 🎂</p>
-            </div>
-
-            <div class="event">
-                <span>22:00</span>
-                <p>Musique & célébration ✨</p>
-            </div>
-
-        </div>
-
+      <div class="final-content reveal">
+        <p class="eyebrow">ONE MORE THING</p>
+        <h2>Votre présence<br><em>fera toute la différence.</em></h2>
+        <p>Au plaisir de vous retrouver pour célébrer ce joli moment ensemble.</p>
+        <div class="signature">Zoumourda</div>
+        <div class="final-date">BAC 2026 · 12.09.2026</div>
+        <a class="top-btn" href="#home">↑</a>
+      </div>
     </section>
+  </main>
 
-
-    <!-- ========================= -->
-    <!-- FIN -->
-    <!-- ========================= -->
-
-    <section class="final">
-
-        <div class="final-content">
-
-            <p>UNE NOUVELLE ÉTAPE COMMENCE...</p>
-
-            <h2>ZOUMOURDA</h2>
-
-            <div class="bac-final">BAC 2026</div>
-
-            <div class="star">✦</div>
-
-            <p class="thanks">
-                Merci de partager ce merveilleux moment
-                avec nous.
-            </p>
-
-        </div>
-
-    </section>
-
-
-    <!-- JavaScript -->
-    <script src="script.js"></script>
-
+  <script src="script.js"></script>
 </body>
-
 </html>
